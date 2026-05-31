@@ -35,11 +35,11 @@ html {
 
 /* Mobile approach */
 body {
+  background-color: hsl(30, 38%, 92%);
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: hsl(30, 38%, 92%);
 }
 
 main {
@@ -49,11 +49,7 @@ main {
   border-radius: 7px;
 }
 
-.image {
-  text-align: center;
-}
-
-.image img {
+img {
   width: 338px;
   border-radius: 7px 7px 0 0;
 }
@@ -129,8 +125,30 @@ h1 {
 
 /* DESKTOP APPROACH */
 @media (min-width: 1440px) {
-  .main {
-    display: flex;
-    flex-direction: row;
+  main {
+    width: 525px;
+    display: grid;
+    grid-template-columns: repeat(2, 262px);
+    justify-content: center;
+  }
+
+  .image {
+    background-image: url(images/image-product-desktop.png);
+    background-size: 254px;
+    background-repeat: no-repeat;
+    border-radius: 7px 0 0 7px;
+  }
+
+  img {
+    visibility: hidden;
+  }
+
+  article {
+    padding-left: 22px;
+    padding-right: 28px;
+  }
+
+  .text {
+    font-size: 13px;
   }
 }
