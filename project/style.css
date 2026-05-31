@@ -33,16 +33,15 @@ html {
   font-size: 14px;
 }
 
+/* Mobile approach */
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  flex-direction: column;
   background-color: hsl(30, 38%, 92%);
 }
 
-/* Mobile approach */
 main {
   /* border: 1px solid black; */
   width: 338px;
@@ -67,7 +66,6 @@ article {
 }
 
 .name {
-  /* font-size: 0px; */
   letter-spacing: 5px;
   text-transform: uppercase;
   color: hsl(228, 12%, 48%);
@@ -131,7 +129,8 @@ h1 {
 
 /* DESKTOP APPROACH */
 @media (min-width: 1440px) {
-  .body {
+  .main {
+    display: flex;
     flex-direction: row;
   }
 }
