@@ -30,7 +30,7 @@ Weights: 700
 html {
   font-family: "Montserrat", sans-serif;
   color: hsl(228, 12%, 48%);
-  font-size: 14px;
+  font-size: 0.9rem;
 }
 
 /* Mobile approach */
@@ -44,28 +44,28 @@ body {
 
 main {
   /* border: 1px solid black; */
-  width: 338px;
+  width: 24.1rem;
   background-color: hsl(0, 0%, 100%);
-  border-radius: 7px;
+  border-radius: 0.5rem;
 }
 
 img {
   width: 338px;
-  border-radius: 7px 7px 0 0;
+  border-radius: 0.5rem 0.5rem 0 0;
 }
 
 article {
-  padding: 17px 25px 25px 25px;
+  padding: 1.2rem 1.8rem 1.8rem 1.8rem;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 1.1rem;
 }
 
 .name {
-  letter-spacing: 5px;
+  letter-spacing: 0.4rem;
   text-transform: uppercase;
   color: hsl(228, 12%, 48%);
-  font-size: 10px;
+  font-size: 0.7rem;
   font-weight: 500;
 }
 
@@ -75,17 +75,17 @@ h1 {
 }
 
 .text {
-  line-height: 21px;
+  line-height: 1.5rem;
 }
 
 .prices {
   display: flex;
-  gap: 14px;
+  gap: 1rem;
 }
 
 .new-price {
-  font-size: 32px;
-  font-family: "Fraunces", sans-serif;
+  font-size: 2.1rem;
+  font-family: "Fraunces";
   color: hsl(158, 36%, 37%);
   font-weight: 700;
 }
@@ -98,10 +98,10 @@ h1 {
 .btn {
   display: flex;
   justify-content: center;
-  gap: 5px;
+  gap: 0.4rem;
   /* border: 1px solid black; */
-  padding: 15px;
-  border-radius: 7px;
+  padding: 1.1rem;
+  border-radius: 0.5rem;
   background-color: hsl(158, 36%, 37%);
   font-weight: 500;
 }
@@ -111,7 +111,7 @@ h1 {
 }
 
 .icon {
-  font-size: 15.5px;
+  font-size: 1.1rem;
 }
 
 .btn {
@@ -124,19 +124,19 @@ h1 {
 }
 
 /* DESKTOP APPROACH */
-@media (min-width: 1440px) {
+@media (min-width: 90rem) {
   main {
-    width: 525px;
+    width: 37.5rem;
     display: grid;
-    grid-template-columns: repeat(2, 262px);
+    grid-template-columns: repeat(2, 18.8rem);
     justify-content: center;
   }
 
   .image {
     background-image: url(images/image-product-desktop.png);
-    background-size: 254px;
+    background-size: 18.1rem;
     background-repeat: no-repeat;
-    border-radius: 7px 0 0 7px;
+    border-radius: 0.5rem 0 0 0.5rem;
   }
 
   img {
@@ -144,11 +144,11 @@ h1 {
   }
 
   article {
-    padding-left: 22px;
-    padding-right: 28px;
+    padding-left: 1.6rem;
+    padding-right: 2rem;
   }
 
   .text {
-    font-size: 13px;
+    font-size: 0.9rem;
   }
 }
