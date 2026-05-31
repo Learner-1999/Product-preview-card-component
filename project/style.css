@@ -1,0 +1,128 @@
+/* 
+COLORS
+PRIMARY
+Green 500: hsl(158, 36%, 37%)
+Green 700: hsl(158, 42%, 18%)
+
+NEUTRAL
+Black: hsl(212, 21%, 14%)
+Grey: hsl(228, 12%, 48%)
+Cream: hsl(30, 38%, 92%)
+White: hsl(0, 0%, 100%)
+
+TYPOGRAPHY
+BODY COPY
+Font size (paragraph): 14px
+
+FONT
+Family: Montserrat
+Family: Fraunces
+Weights: 500, 700
+Weights: 700
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: hsl(30, 38%, 92%);
+}
+
+/* Mobile approach */
+@media (min-width: 375px) {
+  main {
+    /* border: 1px solid black; */
+    width: 338px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 7px;
+  }
+
+  .image {
+    text-align: center;
+  }
+
+  .image img {
+    width: 338px;
+    border-radius: 7px 7px 0 0;
+  }
+
+  article {
+    padding: 17px 25px 25px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .name {
+    /* font-size: 0px; */
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: hsl(228, 12%, 48%);
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  h1 {
+    color: hsl(212, 21%, 14%);
+    font-family: "Fraunces";
+  }
+
+  .text {
+    line-height: 21px;
+  }
+
+  .prices {
+    display: flex;
+    gap: 14px;
+  }
+
+  .new-price {
+    font-size: 32px;
+    font-family: "Fraunces", sans-serif;
+    color: hsl(158, 36%, 37%);
+    font-weight: 700;
+  }
+
+  .old-price {
+    align-self: center;
+    text-decoration: line-through;
+  }
+
+  .cart {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    /* border: 1px solid black; */
+    padding: 15px;
+    border-radius: 7px;
+    background-color: hsl(158, 36%, 37%);
+    font-weight: 500;
+  }
+
+  .icon,
+  .cart a {
+    color: white;
+  }
+
+  .icon {
+    font-size: 15.5px;
+  }
+
+  .btn {
+    text-decoration: none;
+  }
+}
