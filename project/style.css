@@ -43,90 +43,95 @@ body {
 }
 
 /* Mobile approach */
-@media (min-width: 375px) {
-  main {
-    /* border: 1px solid black; */
-    width: 338px;
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 7px;
-  }
+main {
+  /* border: 1px solid black; */
+  width: 338px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 7px;
+}
 
-  .image {
-    text-align: center;
-  }
+.image {
+  text-align: center;
+}
 
-  .image img {
-    width: 338px;
-    border-radius: 7px 7px 0 0;
-  }
+.image img {
+  width: 338px;
+  border-radius: 7px 7px 0 0;
+}
 
-  article {
-    padding: 17px 25px 25px 25px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
+article {
+  padding: 17px 25px 25px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 
-  .name {
-    /* font-size: 0px; */
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    color: hsl(228, 12%, 48%);
-    font-size: 10px;
-    font-weight: 500;
-  }
+.name {
+  /* font-size: 0px; */
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: hsl(228, 12%, 48%);
+  font-size: 10px;
+  font-weight: 500;
+}
 
-  h1 {
-    color: hsl(212, 21%, 14%);
-    font-family: "Fraunces";
-  }
+h1 {
+  color: hsl(212, 21%, 14%);
+  font-family: "Fraunces";
+}
 
-  .text {
-    line-height: 21px;
-  }
+.text {
+  line-height: 21px;
+}
 
-  .prices {
-    display: flex;
-    gap: 14px;
-  }
+.prices {
+  display: flex;
+  gap: 14px;
+}
 
-  .new-price {
-    font-size: 32px;
-    font-family: "Fraunces", sans-serif;
-    color: hsl(158, 36%, 37%);
-    font-weight: 700;
-  }
+.new-price {
+  font-size: 32px;
+  font-family: "Fraunces", sans-serif;
+  color: hsl(158, 36%, 37%);
+  font-weight: 700;
+}
 
-  .old-price {
-    align-self: center;
-    text-decoration: line-through;
-  }
+.old-price {
+  align-self: center;
+  text-decoration: line-through;
+}
 
-  .btn {
-    display: flex;
-    justify-content: center;
-    gap: 5px;
-    /* border: 1px solid black; */
-    padding: 15px;
-    border-radius: 7px;
-    background-color: hsl(158, 36%, 37%);
-    font-weight: 500;
-  }
+.btn {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  /* border: 1px solid black; */
+  padding: 15px;
+  border-radius: 7px;
+  background-color: hsl(158, 36%, 37%);
+  font-weight: 500;
+}
 
-  .btn {
-    color: white;
-  }
+.btn {
+  color: white;
+}
 
-  .icon {
-    font-size: 15.5px;
-  }
+.icon {
+  font-size: 15.5px;
+}
 
-  .btn {
-    text-decoration: none;
-  }
+.btn {
+  text-decoration: none;
+}
 
-  .btn:hover {
-    background-color: hsl(158, 42%, 18%);
-    transition: 0.5s;
+.btn:hover {
+  background-color: hsl(158, 42%, 18%);
+  transition: 0.5s;
+}
+
+/* DESKTOP APPROACH */
+@media (min-width: 1440px) {
+  .body {
+    flex-direction: row;
   }
 }
